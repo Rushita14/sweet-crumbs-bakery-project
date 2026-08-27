@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact | Sweet Crumbs Bakery</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                🧁
+            </span>
+
+            <span class="logo-text">
+
+                <strong>
+                    Sweet Crumbs
+                </strong>
+
+                <small>
+                    BAKERY & PATISSERIE
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="index.html#specialties">
+                Specialties
+            </a>
+
+            <a href="order.html" class="active">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <button
+                class="nav-icon"
+                aria-label="Search"
+            >
+                ⌕
+            </button>
+
+            <a
+                href="order.html"
+                class="nav-order"
+            >
+                Order Now
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     CONTACT HERO
+===================================================== -->
+
+<section class="contact-page-hero">
+
+    <div class="contact-hero-circle"></div>
+
+    <div class="contact-hero-content">
+
+        <span class="eyebrow">
+            WE'D LOVE TO HEAR FROM YOU
+        </span>
+
+        <h1>
+            Let's make
+            something <em>sweet.</em>
+        </h1>
+
+        <p>
+            Have a question, want a custom cake,
+            or simply craving something delicious?
+            Drop us a message.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT SECTION
+===================================================== -->
+<main class="order-page">
+
+    <section class="order-hero">
+
+        <span class="eyebrow">
+            ORDER WITH SWEET CRUMBS
+        </span>
+
+        <h1>
+            Let's make your
+            <em>order sweet.</em>
+        </h1>
+
+        <p>
+            Tell us a little about yourself and we'll
+            prepare your freshly baked treats with care.
+        </p>
+
+    </section>
+
+
+    <section class="order-content">
+
+        <!-- ORDER SUMMARY -->
+
+        <div class="order-summary">
+
+            <div class="section-label">
+                YOUR ORDER
+            </div>
+
+            <h2>
+                Sweet things you've chosen.
+            </h2>
+
+            <div id="order-items">
+                <!-- Cart products appear here -->
+            </div>
+
+            <div class="order-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="order-total">
+                    ₹0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- CUSTOMER FORM -->
+
+        <div class="order-form-card">
+
+            <div class="section-label">
+                CUSTOMER DETAILS
+            </div>
+
+            <h2>
+                Tell us where to send the sweetness.
+            </h2>
+
+            <form id="order-form">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Your phone number"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="address">
+                        Delivery Address
+                    </label>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="4"
+                        placeholder="Enter your complete delivery address"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="time">
+                            Preferred Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="time"
+                            name="time"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="notes">
+                        Special Instructions
+                    </label>
+
+                    <textarea
+                        id="notes"
+                        name="notes"
+                        rows="3"
+                        placeholder="Any customisation or special request?"
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="place-order-button"
+                >
+                    Place Order →
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         ORDER CTA
+    ===================================================== -->
+
+    <section class="contact-bottom">
+
+        <div>
+
+            <span>
+                NEED IT SOON?
+            </span>
+
+            <h2>
+                Call us directly
+                for same-day availability.
+            </h2>
+
+        </div>
+
+
+        <a href="tel:+919876543210">
+            Call +91 9876543210 →
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-logo">
+        🧁 Sweet Crumbs
+    </div>
+
+    <p>
+        © 2026 Sweet Crumbs Bakery.
+        Made with love.
+    </p>
+
+</footer>
+
+<script>
+
+const savedCart =
+    JSON.parse(
+        localStorage.getItem("sweetCrumbsCart")
+    ) || [];
+
+
+const orderItems =
+    document.getElementById("order-items");
+
+
+const orderTotal =
+    document.getElementById("order-total");
+
+
+let total = 0;
+
+
+if (savedCart.length === 0) {
+
+    orderItems.innerHTML = `
+        <p>
+            Your cart is empty.
+        </p>
+    `;
+
+} else {
+
+    savedCart.forEach(product => {
+
+        const itemTotal =
+            product.price * product.quantity;
+
+        total += itemTotal;
+
+
+        const item =
+            document.createElement("div");
+
+        item.className = "order-item";
+
+
+        item.innerHTML = `
+
+            <div>
+
+                <h3>
+                    ${product.name}
+                </h3>
+
+                <p>
+                    ₹${product.price} ×
+                    ${product.quantity}
+                </p>
+
+            </div>
+
+            <strong>
+                ₹${itemTotal}
+            </strong>
+
+        `;
+
+
+        orderItems.appendChild(item);
+
+    });
+
+
+    orderTotal.textContent =
+        "₹" + total;
+
+}
+document
+    .getElementById("order-form")
+    .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const formData = new FormData(this);
+
+        const customer = {
+            name: formData.get("name"),
+            phone: formData.get("phone"),
+            email: formData.get("email"),
+            address: formData.get("address"),
+            date: formData.get("date"),
+            time: formData.get("time"),
+            notes: formData.get("notes")
+        };
+
+        console.log("Customer Details:", customer);
+        console.log("Order:", savedCart);
+
+        showOrderConfirmation();
+
+    });
+
+
+function showOrderConfirmation() {
+
+    const orderPage =
+        document.querySelector(".order-page");
+
+    orderPage.innerHTML = `
+
+        <section class="order-success">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <span class="eyebrow">
+                SWEET CRUMBS BAKERY
+            </span>
+
+            <h1>
+                Order <em>Placed!</em>
+            </h1>
+
+            <p>
+                Thank you for ordering with us.
+                Your delicious treats are being prepared
+                with love.
+            </p>
+
+            <div class="delivery-box">
+
+                <div>
+                    <span>EXPECTED DELIVERY</span>
+                    <strong>30–45 minutes</strong>
+                </div>
+
+                <div>
+                    <span>ORDER STATUS</span>
+                    <strong>Being Prepared 👩‍🍳</strong>
+                </div>
+
+            </div>
+
+            <div class="contact-box">
+
+                <h3>
+                    Need help with your order?
+                </h3>
+
+                <p>
+                    Call us and we'll be happy to help.
+                </p>
+
+                <a href="tel:+919876543210">
+                    📞 +91 98765 43210
+                </a>
+
+            </div>
+
+            <a
+                href="menu.html"
+                class="back-menu-button"
+            >
+                Continue Shopping →
+            </a>
+
+        </section>
+
+    `;
+
+    localStorage.removeItem("sweetCrumbsCart");
+
+}
+
+</script>
+
+</body>
+
+</html>

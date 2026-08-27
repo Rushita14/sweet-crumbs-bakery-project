@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Menu | Sweet Crumbs Bakery</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                🧁
+            </span>
+
+            <span class="logo-text">
+
+                <strong>
+                    Sweet Crumbs
+                </strong>
+
+                <small>
+                    BAKERY & PATISSERIE
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html" class="active">
+                Menu
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="index.html#specialties">
+                Specialties
+            </a>
+
+            <a href="order.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- ACTION -->
+
+        <div class="nav-actions">
+
+
+            <button class="cart-button" id="cart-button">
+    🛒 Cart
+    <span id="cart-count">0</span>
+</button>
+            <button
+                class="nav-icon"
+                aria-label="Search"
+            >
+                ⌕
+            </button>
+
+            <a
+                href="order.html"
+                class="nav-order"
+            >
+                Order Now
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MENU HERO
+===================================================== -->
+
+<section class="menu-hero">
+
+    <div class="menu-hero-decoration menu-pink"></div>
+
+    <div class="menu-hero-decoration menu-blue"></div>
+
+    <div class="menu-hero-decoration menu-yellow"></div>
+
+
+    <div class="menu-hero-content">
+
+        <span class="eyebrow">
+            OUR SWEET COLLECTION
+        </span>
+
+        <h1>
+            Made to be
+            <em>loved.</em>
+        </h1>
+
+        <p>
+            From celebration cakes to buttery croissants,
+            discover freshly baked treats made with care.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MENU
+===================================================== -->
+
+<main class="menu-page">
+
+
+    <!-- CATEGORY FILTER -->
+
+  <div class="menu-filters">
+
+    <button class="menu-filter active" data-category="All">
+        All
+    </button>
+
+    <button class="menu-filter" data-category="Cakes">
+        Cakes
+    </button>
+
+    <button class="menu-filter" data-category="Cupcakes">
+        Cupcakes
+    </button>
+
+    <button class="menu-filter" data-category="Pastries">
+        Pastries
+    </button>
+
+    <button class="menu-filter" data-category="Cookies">
+        Cookies
+    </button>
+
+    <button class="menu-filter" data-category="Breads">
+        Breads
+    </button>
+
+</div>
+
+
+
+    <!-- =================================================
+         CAKES
+    ================================================== -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-heading">
+
+            <div>
+
+                <span class="category-number">
+                    01
+                </span>
+
+                <h2>
+                    Cakes
+                </h2>
+
+            </div>
+
+            <p>
+                For birthdays, celebrations
+                and everything worth making sweeter.
+            </p>
+
+        </div>
+
+
+
+<div class="product-grid" id="cakes-products">
+
+            <!-- PRODUCT -->
+
+            <article class="product-card">
+
+                <div class="product-image pink-product">
+
+                    <img
+                        src="images/chocolate-cake.jpg"
+                        alt="Chocolate Cake"
+                    >
+
+                    <span class="product-tag">
+                        BESTSELLER
+                    </span>
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Chocolate Cake
+                    </h3>
+
+                    <p>
+                        Rich chocolate sponge with
+                        creamy chocolate frosting.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹500
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image peach-product">
+
+                    <img
+                        src="images/red-velvet cake.jpg"
+                        alt="Red Velvet Cake"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Red Velvet Cake
+                    </h3>
+
+                    <p>
+                        Soft red velvet layers
+                        with smooth cream cheese frosting.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹650
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image yellow-product">
+
+                    <img
+                        src="images/chocolate-truffle.jpg"
+                        alt="Chocolate Truffle Cake"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Chocolate Truffle
+                    </h3>
+
+                    <p>
+                        Decadent chocolate cake
+                        finished with silky truffle.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹550
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image green-product">
+
+                    <img
+                        src="images/black-forest cake.jpg"
+                        alt="Black Forest Cake"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Black Forest Cake
+                    </h3>
+
+                    <p>
+                        Chocolate sponge, cherries
+                        and whipped cream.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹600
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CUPCAKES
+    ================================================== -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-heading">
+
+            <div>
+
+                <span class="category-number">
+                    02
+                </span>
+
+                <h2>
+                    Cupcakes & Muffins
+                </h2>
+
+            </div>
+
+            <p>
+                Small treats.
+                Big happiness.
+            </p>
+
+        </div>
+
+
+
+<div class="product-grid" id="cupcakes-products">
+            <article class="product-card">
+
+                <div class="product-image blue-product">
+
+                    <img
+                        src="images/chocolate cupcake.jpg"
+                        alt="Chocolate Cupcake"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Chocolate Cupcake
+                    </h3>
+
+                    <p>
+                        Soft chocolate sponge
+                        topped with creamy frosting.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹70
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image pink-product">
+
+                    <img
+                        src="images/vanilla muffin.jpg"
+                        alt="Vanilla Muffin"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Vanilla Muffin
+                    </h3>
+
+                    <p>
+                        Light vanilla sponge
+                        with sweet buttercream.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹60
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image peach-product">
+
+                    <img
+                        src="images/red velvet cupcake.jpg"
+                        alt="Red Velvet Cupcake"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Red Velvet Cupcake
+                    </h3>
+
+                    <p>
+                        Mini red velvet treat
+                        with cream cheese frosting.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹80
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image yellow-product">
+
+                    <img
+                        src="images/blueberry muffin.jpg"
+                        alt="Blueberry Muffin"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Blueberry Muffin
+                    </h3>
+
+                    <p>
+                        Soft muffin packed
+                        with juicy blueberries.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹90
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PASTRIES
+    ================================================== -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-heading">
+
+            <div>
+
+                <span class="category-number">
+                    03
+                </span>
+
+                <h2>
+                    Pastries
+                </h2>
+
+            </div>
+
+            <p>
+                Light, creamy and
+                freshly baked.
+            </p>
+
+        </div>
+
+
+
+<div class="product-grid" id="pastries-products">
+            <article class="product-card">
+
+                <div class="product-image peach-product">
+
+                    <img
+                        src="images/chocolate pastry.jpg"
+                        alt="Chocolate Pastry"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Chocolate Pastry
+                    </h3>
+
+                    <p>
+                        Chocolate sponge with
+                        rich cream layers.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹120
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image pink-product">
+
+                    <img
+                        src="images/strawberry pastry.jpg"
+                        alt="Strawberry Pastry"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Strawberry Pastry
+                    </h3>
+
+                    <p>
+                        Fresh strawberry filling
+                        with soft cream.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹130
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image green-product">
+
+                    <img
+                        src="images/Butter Scotch pastry.jpg"
+                        alt="Butterscotch Pastry"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Butterscotch Pastry
+                    </h3>
+
+                    <p>
+                        Caramelized butterscotch
+                        with creamy frosting.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹125
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image blue-product">
+
+                    <img
+                        src="images/black forest pastry.jpg"
+                        alt="Black Forest Pastry"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Black Forest Pastry
+                    </h3>
+
+                    <p>
+                        Chocolate, cherries
+                        and whipped cream.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹110
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         COOKIES
+    ================================================== -->
+
+    <section class="menu-category">
+
+        <div class="menu-category-heading">
+
+            <div>
+
+                <span class="category-number">
+                    04
+                </span>
+
+                <h2>
+                    Cookies & Brownies
+                </h2>
+
+            </div>
+
+            <p>
+                Little bites of
+                chocolatey happiness.
+            </p>
+
+        </div>
+
+
+
+<div class="product-grid" id="cookies-products">
+            <article class="product-card">
+
+                <div class="product-image yellow-product">
+
+                    <img
+                        src="images/chocolate chips cookie.jpg"
+                        alt="Chocolate Chip Cookies"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Chocolate Chip Cookies
+                    </h3>
+
+                    <p>
+                        Crisp edges, soft centre
+                        and lots of chocolate chips.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹150
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image peach-product">
+
+                    <img
+                        src="images/butter cookies.jpg"
+                        alt="Butter Cookies"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Butter Cookies
+                    </h3>
+
+                    <p>
+                        Classic buttery cookies
+                        with a melt-in-mouth texture.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹140
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image pink-product">
+
+                    <img
+                        src="images/walnut brownie.jpg"
+                        alt="Walnut Brownie"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Walnut Brownie
+                    </h3>
+
+                    <p>
+                        Fudgy chocolate brownie
+                        with crunchy walnuts.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹160
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image green-product">
+
+                    <img
+                        src="images/chocolate-fudge-brownie.jpg"
+                        alt="Chocolate Fudge Brownie"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        Choco Fudge Brownie
+                    </h3>
+
+                    <p>
+                        Rich, gooey and
+                        seriously chocolatey.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹170
+                        </strong>
+
+                        <button>
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CTA
+    ================================================== -->
+
+    <section class="menu-cta">
+
+        <div>
+
+            <span class="eyebrow">
+                HAVE SOMETHING SPECIAL IN MIND?
+            </span>
+
+            <h2>
+                Let's make your
+                <em>dream dessert.</em>
+            </h2>
+
+            <p>
+                Looking for a custom cake or
+                something made especially for you?
+            </p>
+
+            <a
+                href="order.html"
+                class="menu-cta-button"
+            >
+                Talk to Us →
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+<div class="cart-panel" id="cart-panel">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <button id="close-cart">
+            ×
+        </button>
+
+    </div>
+
+
+    <div id="cart-items">
+
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cart-total">
+                ₹0
+            </strong>
+
+        </div>
+
+        <button class="checkout-button" id="checkout-button">
+    Checkout →
+</button>
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-logo">
+        🧁 Sweet Crumbs
+    </div>
+
+    <p>
+        © 2026 Sweet Crumbs Bakery.
+        Made with love.
+    </p>
+
+</footer>
+<script>
+let allProducts = [];
+
+async function loadProducts() {
+
+    try {
+
+        const response = await fetch(
+            "http://localhost:8080/api/products"
+        );
+
+        if (!response.ok) {
+            throw new Error("API error: " + response.status);
+        }
+
+        const products = await response.json();
+
+        allProducts = products;
+
+        console.log("Products received:", products);
+
+        displayProducts(
+            products,
+            "Cakes",
+            "cakes-products"
+        );
+
+        displayProducts(
+            products,
+            "Cupcakes",
+            "cupcakes-products"
+        );
+
+        displayProducts(
+            products,
+            "Pastries",
+            "pastries-products"
+        );
+
+        displayProducts(
+            products,
+            "Cookies",
+            "cookies-products"
+        );
+
+    } catch (error) {
+
+        console.error("ERROR:", error);
+
+    }
+
+}
+
+
+function displayProducts(
+    products,
+    category,
+    containerId
+) {
+
+    const container =
+        document.getElementById(containerId);
+
+        
+    if (!container) {
+
+        console.error(
+            "Container not found:",
+            containerId
+        );
+
+        return;
+
+    }
+
+
+    const filteredProducts =
+        products.filter(
+            product =>
+                product.category === category
+        );
+
+        console.log("Container:", containerId, container);
+console.log("Category:", category);
+console.log("Filtered products:", filteredProducts);
+    container.innerHTML = "";
+
+
+    const styles = [
+        "pink-product",
+        "peach-product",
+        "yellow-product",
+        "green-product"
+    ];
+
+
+    filteredProducts.forEach(
+        (product, index) => {
+
+            const card =
+                document.createElement("article");
+
+
+            card.className =
+                "product-card";
+
+
+            const style =
+                styles[index % styles.length];
+
+
+            card.innerHTML = `
+
+                <div class="product-image ${style}">
+
+                    <img
+                        src="images/${product.image}"
+                        alt="${product.name}"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        ${product.name}
+                    </h3>
+
+                    <p>
+                        ${product.description}
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹${product.price}
+                        </strong>
+
+                        <button class="add-to-cart" data-id="${product.id}">
+    +
+</button>
+
+                    </div>
+
+                </div>
+
+            `;
+
+
+            container.appendChild(card);
+
+        }
+    );
+
+}
+
+
+loadProducts();
+
+const filterButtons = document.querySelectorAll(".menu-filter");
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        // Remove active from all buttons
+        filterButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        // Add active to clicked button
+        this.classList.add("active");
+
+        const selectedCategory = this.dataset.category;
+
+        filterProducts(selectedCategory);
+
+    });
+
+});
+
+
+function filterProducts(category) {
+
+    const categories = [
+        {
+            name: "Cakes",
+            id: "cakes-products"
+        },
+        {
+            name: "Cupcakes",
+            id: "cupcakes-products"
+        },
+        {
+            name: "Pastries",
+            id: "pastries-products"
+        },
+        {
+            name: "Cookies",
+            id: "cookies-products"
+        }
+    ];
+
+    categories.forEach(item => {
+
+        const container =
+            document.getElementById(item.id);
+
+        const section =
+            container.closest(".menu-category");
+
+        if (category === "All") {
+
+            section.style.display = "block";
+
+        } else if (category === item.name) {
+
+            section.style.display = "block";
+
+        } else {
+
+            section.style.display = "none";
+
+        }
+
+    });
+
+}
+let cart = [];
+
+document.addEventListener("click", function (event) {
+
+    if (!event.target.classList.contains("add-to-cart")) {
+        return;
+    }
+
+    const productId =
+        Number(event.target.dataset.id);
+
+    addToCart(productId);
+
+});
+
+function addToCart(productId) {
+
+    const product =
+        allProducts.find(
+            p => p.id === productId
+        );
+
+    if (!product) {
+        return;
+    }
+
+    const existingProduct =
+        cart.find(
+            item => item.id === productId
+        );
+
+    if (existingProduct) {
+
+        existingProduct.quantity++;
+
+    } else {
+
+        cart.push({
+            ...product,
+            quantity: 1
+        });
+
+    }
+
+    console.log("Cart:", cart);
+
+    updateCart();
+}
+
+function updateCart() {
+
+    const cartItems =
+        document.getElementById("cart-items");
+
+    const cartCount =
+        document.getElementById("cart-count");
+
+    const cartTotal =
+        document.getElementById("cart-total");
+
+
+    if (cart.length === 0) {
+
+        cartItems.innerHTML = `
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+        `;
+
+        cartCount.textContent = "0";
+
+        cartTotal.textContent = "₹0";
+
+        return;
+    }
+
+
+    cartItems.innerHTML = "";
+
+
+    let total = 0;
+
+    let itemCount = 0;
+
+
+    cart.forEach(product => {
+
+        const itemTotal =
+            product.price * product.quantity;
+
+        total += itemTotal;
+
+        itemCount += product.quantity;
+
+
+        const item =
+            document.createElement("div");
+
+        item.className = "cart-item";
+
+
+        item.innerHTML = `
+
+            <div class="cart-item-info">
+
+                <h4>
+                    ${product.name}
+                </h4>
+
+                <p>
+                    ₹${product.price}
+                </p>
+
+            </div>
+
+
+            <div class="cart-quantity">
+
+                <button
+                    onclick="changeQuantity(${product.id}, -1)"
+                >
+                    −
+                </button>
+
+                <span>
+                    ${product.quantity}
+                </span>
+
+                <button
+                    onclick="changeQuantity(${product.id}, 1)"
+                >
+                    +
+                </button>
+
+            </div>
+
+        `;
+
+
+        cartItems.appendChild(item);
+
+    });
+
+
+    cartCount.textContent = itemCount;
+
+    cartTotal.textContent = "₹" + total;
+
+}
+
+function changeQuantity(productId, change) {
+
+    const product =
+        cart.find(
+            item => item.id === productId
+        );
+
+    if (!product) {
+        return;
+    }
+
+
+    product.quantity += change;
+
+
+    if (product.quantity <= 0) {
+
+        cart =
+            cart.filter(
+                item => item.id !== productId
+            );
+
+    }
+
+
+    updateCart();
+
+}
+
+document
+    .getElementById("cart-button")
+    .addEventListener("click", function () {
+
+        document
+            .getElementById("cart-panel")
+            .classList.add("open");
+
+    });
+
+
+document
+    .getElementById("close-cart")
+    .addEventListener("click", function () {
+
+        document
+            .getElementById("cart-panel")
+            .classList.remove("open");
+
+    });
+
+    document
+    .getElementById("checkout-button")
+    .addEventListener("click", function () {
+
+        if (cart.length === 0) {
+
+            alert("Your cart is empty.");
+
+            return;
+        }
+
+        localStorage.setItem(
+            "sweetCrumbsCart",
+            JSON.stringify(cart)
+        );
+
+        window.location.href = "order.html";
+
+    });
+    
+</script>
+</body>
+
+</html>
