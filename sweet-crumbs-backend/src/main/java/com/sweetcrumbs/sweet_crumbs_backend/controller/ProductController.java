@@ -1,59 +1,73 @@
-package com.sweetcrumbs.sweet_crumbs_backend.service;
+package com.sweetcrumbs.sweet_crumbs_backend.controller;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import com.sweetcrumbs.sweet_crumbs_backend.entity.Product;
-import com.sweetcrumbs.sweet_crumbs_backend.repository.ProductRepository;
+import com.sweetcrumbs.sweet_crumbs_backend.service.ProductService;
 
-@Service
-public class ProductService {
+@RestController
+@RequestMapping("/api/products")
+@CrossOrigin(origins = "*")
+public class ProductController {
 
-    private final ProductRepository productRepository;
+    private final ProductService productService;
 
-    public ProductService(ProductRepository productRepository) {
-        this.productRepository = productRepository;
+    public ProductController(ProductService productService) {
+        this.productService = productService;
     }
 
     // Get all products
+    @GetMapping
     public List<Product> getAllProducts() {
-        return productRepository.findAll();
+        return productService.getAllProducts();
     }
 
     // Get product by ID
-    public Product getProductById(Long id) {
-        return productRepository.findById(id).orElse(null);
-    }
+    @GetMapping("/{id}")
+    public ResponseEntity<Product> getProductById(@PathVariable Long id) {
+        Product product = productService.getProductById(id);
 
-    // Add product
-    public Product addProduct(Product product) {
-        return productRepository.save(product);
-    }
-
-    public List<Product> addProducts(List<Product> products) {
-    return productRepository.saveAll(products);
-}
-
-    // Update product
-    public Product updateProduct(Long id, Product product) {
-
-        Product existingProduct = productRepository.findById(id).orElse(null);
-
-        if (existingProduct != null) {
-            existingProduct.setName(product.getName());
-            existingProduct.setDescription(product.getDescription());
-            existingProduct.setPrice(product.getPrice());
-            existingProduct.setImage(product.getImage());
-
-            return productRepository.save(existingProduct);
+        if (product != null) {
+            return ResponseEntity.ok(product);
         }
 
-        return null;
+        return ResponseEntity.notFound().build();
+    }
+
+    // Add a single product
+    @PostMapping
+    public Product addProduct(@RequestBody Product product) {
+        return productService.addProduct(product);
+    }
+
+    // Add multiple products
+    @PostMapping("/bulk")
+    public List<Product> addProducts(@RequestBody List<Product> products) {
+        return productService.addProducts(products);
+    }
+
+    // Update product
+    @PutMapping("/{id}")
+    public ResponseEntity<Product> updateProduct(
+            @PathVariable Long id,
+            @RequestBody Product product) {
+
+        Product updatedProduct = productService.updateProduct(id, product);
+
+        if (updatedProduct != null) {
+            return ResponseEntity.ok(updatedProduct);
+        }
+
+        return ResponseEntity.notFound().build();
     }
 
     // Delete product
-    public void deleteProduct(Long id) {
-        productRepository.deleteById(id);
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
+        productService.deleteProduct(id);
+        return ResponseEntity.noContent().build();
     }
 }
