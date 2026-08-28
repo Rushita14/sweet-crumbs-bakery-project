@@ -1,38 +1,59 @@
-package com.sweetcrumbs.sweet_crumbs_backend.controller;
+package com.sweetcrumbs.sweet_crumbs_backend.service;
 
 import java.util.List;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Service;
 
 import com.sweetcrumbs.sweet_crumbs_backend.entity.Product;
-import com.sweetcrumbs.sweet_crumbs_backend.service.ProductService;
+import com.sweetcrumbs.sweet_crumbs_backend.repository.ProductRepository;
 
-@RestController
-@RequestMapping("/api/products")
-public class ProductController {
+@Service
+public class ProductService {
 
-    private final ProductService productService;
+    private final ProductRepository productRepository;
 
-    public ProductController(ProductService productService) {
-        this.productService = productService;
+    public ProductService(ProductRepository productRepository) {
+        this.productRepository = productRepository;
     }
 
-    @GetMapping
+    // Get all products
     public List<Product> getAllProducts() {
-        return productService.getAllProducts();
+        return productRepository.findAll();
     }
 
-    @PostMapping
-    public Product addProduct(@RequestBody Product product) {
-        return productService.addProduct(product);
+    // Get product by ID
+    public Product getProductById(Long id) {
+        return productRepository.findById(id).orElse(null);
     }
 
-    @PostMapping("/bulk")
-    public List<Product> addProducts(@RequestBody List<Product> products) {
-        return productService.addProducts(products);
+    // Add product
+    public Product addProduct(Product product) {
+        return productRepository.save(product);
+    }
+
+    public List<Product> addProducts(List<Product> products) {
+    return productRepository.saveAll(products);
+}
+
+    // Update product
+    public Product updateProduct(Long id, Product product) {
+
+        Product existingProduct = productRepository.findById(id).orElse(null);
+
+        if (existingProduct != null) {
+            existingProduct.setName(product.getName());
+            existingProduct.setDescription(product.getDescription());
+            existingProduct.setPrice(product.getPrice());
+            existingProduct.setImage(product.getImage());
+
+            return productRepository.save(existingProduct);
+        }
+
+        return null;
+    }
+
+    // Delete product
+    public void deleteProduct(Long id) {
+        productRepository.deleteById(id);
     }
 }
