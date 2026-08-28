@@ -1089,12 +1089,13 @@ async function loadProducts() {
     try {
 
         const response = await fetch(
-            "http://localhost:8080/api/products"
+            "https://sweet-crumbs-bakery-project-production.up.railway.app/api/products"
         );
 
         if (!response.ok) {
             throw new Error("API error: " + response.status);
         }
+
 
         const products = await response.json();
 
