@@ -10,7 +10,7 @@ import com.sweetcrumbs.sweet_crumbs_backend.service.ProductService;
 
 @RestController
 @RequestMapping("/api/products")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://sweetcrumbs-bakery-demo.netlify.app")
 public class ProductController {
 
     private final ProductService productService;

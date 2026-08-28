@@ -17,7 +17,7 @@ import com.sweetcrumbs.sweet_crumbs_backend.repository.OrderRepository;
 
 @RestController
 @RequestMapping("/api/orders")
-@CrossOrigin
+@CrossOrigin(origins = "https://sweetcrumbs-bakery-demo.netlify.app")
 public class OrderController {
 
     private final OrderRepository orderRepository;
