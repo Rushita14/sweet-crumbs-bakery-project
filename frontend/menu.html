@@ -1371,6 +1371,10 @@ function addToCart(productId) {
     console.log("Cart:", cart);
 
     updateCart();
+    displayProducts(allProducts, "Cakes", "cakes-products");
+displayProducts(allProducts, "Cupcakes", "cupcakes-products");
+displayProducts(allProducts, "Pastries", "pastries-products");
+displayProducts(allProducts, "Cookies", "cookies-products");
 }
 
 function updateCart() {
