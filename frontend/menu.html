@@ -1221,10 +1221,21 @@ console.log("Filtered products:", filteredProducts);
                         <strong>
                             ₹${product.price}
                         </strong>
+<div class="product-quantity">
 
-                        <button class="add-to-cart" data-id="${product.id}">
-    +
-</button>
+    <button onclick="changeQuantity(${product.id}, -1)">
+        −
+    </button>
+
+    <span>
+        ${(cart.find(item => item.id === product.id)?.quantity) || 0}
+    </span>
+
+    <button onclick="addToCart(${product.id})">
+        +
+    </button>
+
+</div>
 
                     </div>
 
@@ -1326,6 +1337,7 @@ document.addEventListener("click", function (event) {
     addToCart(productId);
 
 });
+
 
 function addToCart(productId) {
 
@@ -1488,6 +1500,11 @@ function changeQuantity(productId, change) {
 
 
     updateCart();
+
+    displayProducts(allProducts, "Cakes", "cakes-products");
+displayProducts(allProducts, "Cupcakes", "cupcakes-products");
+displayProducts(allProducts, "Pastries", "pastries-products");
+displayProducts(allProducts, "Cookies", "cookies-products");
 
 }
 
